@@ -1,0 +1,53 @@
+
+
+<div class="card">
+    <div class="card-header">
+        Student Details
+    </div>
+    <div class="card-body">
+        <form #stdForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="fname" >Name</label>
+                <input 
+                type="text"
+                ngModel
+                name="name"
+                class="form-control"
+                required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age" >Age</label>
+                <input 
+                type="number"
+                ngModel
+                name="age"
+                class="form-control"
+                required>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="course" >Course</label>
+                    <input 
+                    type="text"
+                    ngModel
+                    name="course"
+                    class="form-control"
+                    required>
+                </div>
+                <label for="mobile" >Mobile</label>
+                <input 
+                type="text"
+                ngModel
+                name="mobile"
+                class="form-control"
+                required>
+            </div>
+            
+            <button type="submit" *ngIf="!isInEditMode" class="button btn-block btn-outline-primary mt-3">Add TODO</button>
+            <button type="button" *ngIf="isInEditMode" (click)="onUpdate()" class="button btn-block btn-outline-primary mt-3">Update TODO</button>
+        </form>
+    </div>
+</div>
+
+

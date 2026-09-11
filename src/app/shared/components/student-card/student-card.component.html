@@ -1,0 +1,29 @@
+ 
+ <div class="row">
+    <div class="col-md-4 mt-3" *ngFor="let std of studentArr, trackBy : trackStd">
+    <div class="card" >
+        <div class="card-header">
+            {{std.name}}
+        </div>
+        <div class="card-body">
+            <div >
+                Age : {{std.age}}
+            </div>
+            <div>
+                Mobile : {{std.mobile}}
+            </div>
+            <div >
+                
+                Course : {{std.course}}
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-between">
+                <button mat-mini-fab color="primary"(click)="onEdit(std)"><mat-icon>edit</mat-icon></button>
+                <button mat-mini-fab color="warn" (click)="onRemove(std.id)"><mat-icon>delete</mat-icon></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
