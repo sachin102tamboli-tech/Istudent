@@ -35,12 +35,12 @@ export class FunctionService {
     })
   }
 
-  onRemove(id : number):Observable<IRes<Istudent[]>>{
+  onRemove(id : number):Observable<IRes<Istudent>>{
     let getIndex = this.studentArr.findIndex(k => k.id === id)
     let removeObj = this.studentArr.splice(getIndex, 1)
     return of({
       msg : `The Studen ${removeObj[0].id} is Removed Successfully!!!`,
-      obj : removeObj
+      obj : removeObj[0]
     })
   }
 }

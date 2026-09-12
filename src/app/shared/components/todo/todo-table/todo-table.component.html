@@ -1,0 +1,31 @@
+
+
+
+<table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Sr no.</th>
+            <th>Title</th>
+            <th>Is Completed?</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>        
+    </thead>
+    <tbody>
+        <ng-container *ngIf="todoArr.length > 0, else noTodo">
+        <tr *ngFor="let tod of todoArr; let i= index, trackby : trackTodo">
+            <td>{{i+1}}</td>
+            <td>{{tod.title}}</td>
+            <td><span  class="badge " [ngClass]="tod.isCompleted ? 'bg-success' : 'bg-danger'">{{tod.isCompleted ? 'Completed' : 'Pending'}}</span></td>
+            <td><button (click)="onEdit(tod)" mat-mini-fab color="primary"><mat-icon>edit</mat-icon></button></td>
+            <td><button (click)="onRemove(tod.id)" mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button></td>
+        </tr>
+        </ng-container> 
+        <ng-template #noTodo>
+            <tr>
+                <td colspan="5" class="text-center">No TODO Data Found</td>
+            </tr>
+        </ng-template>
+    </tbody>
+</table>
+

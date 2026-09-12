@@ -1,0 +1,35 @@
+import { Itodo } from "../model/todo";
+
+
+export const todoArr : Itodo[]= [
+  { id: 1, title: 'Learn HTML', isCompleted: true },
+  { id: 2, title: 'Learn CSS', isCompleted: false },
+  { id: 3, title: 'Learn JavaScript', isCompleted: true },
+  { id: 4, title: 'Learn TypeScript', isCompleted: false },
+  { id: 5, title: 'Learn Angular', isCompleted: true },
+  { id: 6, title: 'Practice Components', isCompleted: false },
+  { id: 7, title: 'Learn Data Binding', isCompleted: true },
+  { id: 8, title: 'Practice Directives', isCompleted: false },
+  { id: 9, title: 'Learn Pipes', isCompleted: true },
+  { id: 10, title: 'Learn Services', isCompleted: false },
+  { id: 11, title: 'Learn Dependency Injection', isCompleted: true },
+  { id: 12, title: 'Practice Forms', isCompleted: false },
+  { id: 13, title: 'Learn Routing', isCompleted: true },
+  { id: 14, title: 'Practice Route Guards', isCompleted: false },
+  { id: 15, title: 'Learn HTTP Client', isCompleted: true },
+  { id: 16, title: 'Practice REST API', isCompleted: false },
+  { id: 17, title: 'Practice CRUD Operations', isCompleted: true },
+  { id: 18, title: 'Learn RxJS', isCompleted: false },
+  { id: 19, title: 'Practice Observable', isCompleted: true },
+  { id: 20, title: 'Learn Subject', isCompleted: false },
+  { id: 21, title: 'Practice Angular Material', isCompleted: true },
+  { id: 22, title: 'Create Student CRUD', isCompleted: false },
+  { id: 23, title: 'Create Todo App', isCompleted: true },
+  { id: 24, title: 'Practice Bootstrap', isCompleted: false },
+  { id: 25, title: 'Learn JavaScript Arrays', isCompleted: true },
+  { id: 26, title: 'Learn JavaScript Objects', isCompleted: false },
+  { id: 27, title: 'Practice API Integration', isCompleted: true },
+  { id: 28, title: 'Prepare Angular Questions', isCompleted: false },
+  { id: 29, title: 'Prepare JavaScript Questions', isCompleted: true },
+  { id: 30, title: 'Practice Interview', isCompleted: false }
+];

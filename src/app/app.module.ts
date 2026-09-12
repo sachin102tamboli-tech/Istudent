@@ -12,6 +12,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm.component';
+import { TodoDashComponent } from './shared/components/todo/todo-dash/todo-dash.component';
+import { TodoFormComponent } from './shared/components/todo/todo-form/todo-form.component';
+import { TodoTableComponent } from './shared/components/todo/todo-table/todo-table.component';
+import { NavabrComponent } from './shared/components/navabr/navabr.component';
+import { AppRoutingModule } from './shared/app-routing.modules';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,11 @@ import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm
     StudentDashComponent,
     StudentFormComponent,
     StudentCardComponent,
-    GetConfirmComponent
+    GetConfirmComponent,
+    TodoDashComponent,
+    TodoFormComponent,
+    TodoTableComponent,
+    NavabrComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,8 @@ import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
